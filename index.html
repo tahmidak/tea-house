@@ -72,21 +72,22 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-6 text-base">
-              <li><a>Home</a></li>
-              <li><a>Shop</a></li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Shop">Shop</a></li>
+              <li><a href="#News">News</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </div>
           <div class="text-base">
             <a
               class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] bt px-4 md:px-8 py-0 md:py-2 rounded bg-c-primary text-[#fff]"
+              onclick="my_modal_2.showModal()"
               >Login</a
             >
           </div>
         </div>
       </nav>
-      <section class="banner">
+      <section class="banner" id="Home">
         <div class="hero min-h-screen">
           <div class="hero-content flex-col lg:flex-row-reverse gap-16">
             <div class="banner_img flex-1 relative">
@@ -119,12 +120,14 @@
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction
                 To Your Taste Buds.
               </p>
-              <button
-                class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white border-0 flex justify-center items-center text-base px-6 py-3"
-              >
-                Explore More
-                <img src="Assets/images/arrow.png" alt="arrow" />
-              </button>
+              <a href="#Shop">
+                <button
+                  class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white border-0 flex justify-center items-center text-base px-6 py-3"
+                >
+                  Explore More
+                  <img src="Assets/images/arrow.png" alt="arrow" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -135,6 +138,7 @@
       <!-- Featured Products section -->
       <section
         class="featured_products flex flex-col gap-8 justify-center items-center my-12"
+        id="Shop"
       >
         <div class="fp_heading flex flex-col justify-center items-center gap-4">
           <div class="heading text-4xl font-bold text-center">
@@ -155,7 +159,9 @@
             <div
               class="card flex flex-col justify-between h-full min-h-80 p-4 bg-gradient-to-b from-[#F4F4F4] to-white hover:to-[#F4F4F4]"
             >
-              <div class="c_img flex justify-center items-center h-3/4 p-5 min-h-64">
+              <div
+                class="c_img flex justify-center items-center h-3/4 p-5 min-h-64"
+              >
                 <img
                   src="Assets/images/tea-1.png"
                   alt="tea-picture"
@@ -177,7 +183,9 @@
             <div
               class="card flex flex-col justify-between h-full min-h-80 p-4 bg-gradient-to-b from-[#F4F4F4] to-white hover:to-[#F4F4F4]"
             >
-              <div class="c_img flex justify-center items-center h-3/4 p-5 min-h-64">
+              <div
+                class="c_img flex justify-center items-center h-3/4 p-5 min-h-64"
+              >
                 <img
                   src="Assets/images/tea-2.png"
                   alt="tea-picture"
@@ -199,7 +207,9 @@
             <div
               class="card flex flex-col justify-between h-full min-h-80 p-4 bg-gradient-to-b from-[#F4F4F4] to-white hover:to-[#F4F4F4]"
             >
-              <div class="c_img flex justify-center items-center h-3/4 p-5 min-h-64">
+              <div
+                class="c_img flex justify-center items-center h-3/4 p-5 min-h-64"
+              >
                 <img
                   src="Assets/images/tea-3.png"
                   alt="tea-picture"
@@ -221,7 +231,9 @@
             <div
               class="card flex flex-col justify-between h-full min-h-80 p-4 bg-gradient-to-b from-[#F4F4F4] to-white hover:to-[#F4F4F4]"
             >
-              <div class="c_img flex justify-center items-center h-3/4 p-5 min-h-64">
+              <div
+                class="c_img flex justify-center items-center h-3/4 p-5 min-h-64"
+              >
                 <img
                   src="Assets/images/tea-4.png"
                   alt="tea-picture"
@@ -393,6 +405,7 @@
       <!-- news and events section -->
       <section
         class="featured_products flex flex-col gap-8 justify-center items-center my-12"
+        id="News"
       >
         <div class="fp_heading flex flex-col justify-center items-center gap-4">
           <div class="heading text-4xl font-bold text-center">
@@ -501,6 +514,197 @@
           </div>
         </div>
       </section>
+
+      <!-- contacts section -->
+      <section
+        class="services flex flex-col justify-center items-center md:py-16 p-4 gap-8"
+        id="Contact"
+      >
+        <div
+          class="s_sec_head flex flex-col justify-center items-center gap-4 sm:gap-6 max-w-xl"
+        >
+          <h1
+            class="sec_heading font_eb-garamond text-3xl sm:text-4xl font-extrabold text-dark-02 text-center"
+          >
+            Contact With Us
+          </h1>
+          <p
+            class="sec_description text-dark-03 text-sm sm:text-base text-center"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+
+        <div
+          class="c_content flex flex-col lg:flex-row gap-8 justify-center items-center w-full"
+        >
+          <div class="c_description flex-1">
+            <div
+              class="c_container grid justify-center items-center grid-cols-2 gap-px bg-[#CFCFCF]"
+            >
+              <!-- content card 01 -->
+              <div
+                class="contacts_card grid grid-cols-1 items-center bg-[#F3F3F3] justify-center gap-3 p-10 h-[225px]"
+              >
+                <div class="cimg flex justify-center items-center">
+                  <img
+                    src="Assets/svg/map.svg"
+                    alt="contacts-img"
+                    class="h-10 w-10"
+                  />
+                </div>
+                <h4
+                  class="text-center font_eb-garamond text-2xl text-dark-02 truncate"
+                >
+                  Address
+                </h4>
+                <div class="info text-center text-base text-dark-03 truncate">
+                  A108 Adam Street,<br />
+                  New York, NY 535022
+                </div>
+              </div>
+              <!-- content card 02 -->
+              <div
+                class="contacts_card grid grid-cols-1 items-center bg-[#F3F3F3] justify-center gap-3 p-10 h-[225px]"
+              >
+                <div class="cimg flex justify-center items-center">
+                  <img
+                    src="Assets/svg/telephone.svg"
+                    alt="contacts-img"
+                    class="h-10 w-10"
+                  />
+                </div>
+                <h4
+                  class="text-center font_eb-garamond text-2xl text-dark-02 truncate"
+                >
+                  Call Us
+                </h4>
+                <div class="info text-center text-base text-dark-03 truncate">
+                  +88 01750 00 00 00<br />
+                  +88 01750 00 00 00
+                </div>
+              </div>
+              <!-- content card 03 -->
+              <div
+                class="contacts_card grid grid-cols-1 items-center bg-[#F3F3F3] justify-center gap-3 p-10 h-[225px]"
+              >
+                <div class="cimg flex justify-center items-center">
+                  <img
+                    src="Assets/svg/back-navigation.svg"
+                    alt="contacts-img"
+                    class="h-10 w-10"
+                  />
+                </div>
+                <h4
+                  class="text-center font_eb-garamond text-2xl text-dark-02 truncate"
+                >
+                  Email Us
+                </h4>
+                <div class="info text-center text-base text-dark-03 truncate">
+                  info@gmail.com<br />
+                  info@gmail.com
+                </div>
+              </div>
+              <!-- content card 04 -->
+              <div
+                class="contacts_card grid grid-cols-1 items-center bg-[#F3F3F3] justify-center gap-3 p-10 h-[225px]"
+              >
+                <div class="cimg flex justify-center items-center">
+                  <img
+                    src="Assets/svg/clock.svg"
+                    alt="contacts-img"
+                    class="h-10 w-10"
+                  />
+                </div>
+                <h4
+                  class="text-center font_eb-garamond text-2xl text-dark-02 truncate"
+                >
+                  Working Hours
+                </h4>
+                <div class="info text-center text-base text-dark-03 truncate">
+                  Mon-Fri: 9AM to 5PM<br />
+                  Sunday: 9AM to 1 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--           <div class="c_img flex-1 flex justify-center items-center">
+            <div
+              class="imp_container grid grid-cols-1 gap-8 justify-center items-center w-full"
+            >
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="input input-bordered w-full box-border bg-[#F3F3F3] text-dark-02 p-6"
+              />
+              <input
+                type="text"
+                placeholder="Your Email"
+                class="input input-bordered w-full box-border bg-[#F3F3F3] text-dark-02 p-6"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="input input-bordered w-full box-border bg-[#F3F3F3] text-dark-02 p-6"
+              />
+              <textarea
+                class="textarea textarea-bordered h-28 bg-[#F3F3F3]"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                class="btn w-full border-none hover:text-dark-02 bg-dark-gold text-white text-base font-semibold"
+              >
+                Send Message
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_2" class="modal">
+        <div class="login_modal modal-box max-w-sm w-full">
+          <h3 class="text-2xl font-bold mb-4 text-center">Login to Tea House</h3>
+          <form class="flex flex-col gap-4">
+            <div>
+              <label for="email" class="block text-sm font-medium mb-1">Email</label>
+              <input
+                id="email"
+                type="email"
+                required
+                class="input input-bordered w-full"
+                placeholder="you@email.com"
+              />
+            </div>
+            <div>
+              <label for="password" class="block text-sm font-medium mb-1">Password</label>
+              <input
+                id="password"
+                type="password"
+                required
+                class="input input-bordered w-full"
+                placeholder="••••••••"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white w-full font-semibold"
+            >
+              Login
+            </button>
+            <div class="flex justify-between items-center text-xs mt-2">
+              <a href="#" class="text-[#FF8938] hover:underline">Forgot password?</a>
+              <a href="#" class="text-[#FF8938] hover:underline">Sign up</a>
+            </div>
+          </form>
+          <p class="py-4 text-center text-xs text-gray-400">Press ESC or click outside to close</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </main>
 
     <footer
@@ -526,11 +730,13 @@
             class="g_s text-[#494949] flex justify-center items-center gap-12"
           >
             <p>Ready to get strated?</p>
-            <button
-              class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white border-0 flex justify-center items-center text-base"
+            <a href="#Shop"
+              ><button
+                class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white border-0 flex justify-center items-center text-base"
+              >
+                Explore More
+              </button></a
             >
-              Explore More
-            </button>
           </div>
         </div>
         <div class="footer text-base-content p-4 justify-between">
@@ -580,7 +786,7 @@
         </div>
         <div class="footer footer-center text-base-content p-4">
           <aside>
-            <p>© 2027 UIDesign.to - All rights reserved.</p>
+            <p>© 2027 TeaHouse.to - All rights reserved.</p>
           </aside>
         </div>
       </div>
